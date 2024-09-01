@@ -1,0 +1,18 @@
+package templates
+
+templ Results(searchTerm string, matches []string) {
+	<!DOCTYPE html>
+	<div id="result">
+		if searchTerm != "" {
+			<ul>
+				if len(matches) > 0 {
+					for i := range matches {
+						<li>{ matches[i] }</li>
+					}
+				} else {
+					<li>No matches😔</li>
+				}
+			</ul>
+		}
+	</div>
+}

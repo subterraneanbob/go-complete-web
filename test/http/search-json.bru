@@ -1,0 +1,19 @@
+meta {
+  name: search-json
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/search?searchTerm=table
+  body: none
+  auth: none
+}
+
+params:query {
+  searchTerm: table
+}
+
+headers {
+  Accept: application/json
+}
