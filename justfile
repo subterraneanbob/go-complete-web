@@ -1,4 +1,4 @@
-set shell := ["powershell.exe", "-c"]
+set windows-shell := ["pwsh", "-c"]
 
 default: watch
 
